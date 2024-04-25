@@ -33,7 +33,7 @@ pub fn main() !void {
     // initalize an array of u8 with all letter 'A'.
     // we need to pick a size of the array, 64 seems like a good number.
     // fix the initalization below
-    var content = ['A']**64;
+    var content = [_]u8{'A'} ** 64;
     // this should print out : `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`
     std.debug.print("{s}\n", .{content});
 
